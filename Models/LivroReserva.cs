@@ -18,11 +18,11 @@ namespace Bibliotec.Models
 
         [ForeignKey("Livro")]
         public int LivroID { get; set;}
-        public Livro Livro { get; set; }
+        public Livro ? Livro { get; set; }
 
         [ForeignKey("Usuario")]
         public int UsuarioID { get; set; }
-        public Usuario Usuario { get; set; }
+        public Usuario ? Usuario { get; set; }
 
 
 
