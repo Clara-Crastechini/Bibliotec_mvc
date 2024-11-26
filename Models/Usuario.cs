@@ -25,7 +25,8 @@ namespace Bibliotec.Models
         //  criar um atributo
 
         [ForeignKey("Curso")] 
-        public int CursoID {get; set;}
+        public int ? CursoID {get; set;}
+        public Curso? Curso{get; set;}
 
     }
 }
